@@ -1,0 +1,17 @@
+ion-card-title {
+ text-align: center;
+ margin:2px 2px;
+ font-family:  'Roboto', sans-serif;
+ font-weight: 300;
+}
+ion-img{
+    border:2px;
+    border-radius: 4px;
+}
+ion-card-subtitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+

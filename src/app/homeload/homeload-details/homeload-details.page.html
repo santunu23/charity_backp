@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homeload"></ion-back-button>
+    </ion-buttons>
+    <ion-title>More stories</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row>
+    <ion-col>
+        <ion-card>
+            <ion-card-header>
+             <ion-title>{{ loadedhomecontent.title }}</ion-title>
+            </ion-card-header>
+            <ion-img [src]="loadedhomecontent.imageUrl"></ion-img>
+            <ion-card-content>{{ loadedhomecontent.description }}</ion-card-content>
+            <ion-button color="primary" (click)="cardroute()"  expand="block">Donate by Credit Card</ion-button>
+            <ion-button color="danger" expand="block">Donate by Bkash</ion-button>
+            <ion-button color="primary" expand="block">Other type</ion-button>
+          </ion-card>
+       
+    </ion-col>
+  </ion-row>
+  
+</ion-content>
