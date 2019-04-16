@@ -1,3 +1,40 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start">
+      <ion-header>
+          <ion-toolbar color="tertiary">
+            <ion-title>Charity Menus</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+              <ion-menu-toggle>
+                  <ion-item routerLink="/homeload">
+                    <ion-icon name="home" slot="start"></ion-icon>
+                    <ion-label>Home</ion-label>
+                  </ion-item>
+              </ion-menu-toggle>
+            <ion-menu-toggle>
+                <ion-item routerLink="/getupdate">
+                  <ion-icon name="mail-open" slot="start"></ion-icon>
+                  <ion-label>Get Update</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+           <ion-menu-toggle>
+              <ion-item routerLink="/donation">
+                <ion-icon name="cash" slot="start"></ion-icon>
+                <ion-label>Make Donation</ion-label>
+              </ion-item>
+           </ion-menu-toggle>
+              <ion-menu-toggle>
+                  <ion-item routerLink="/volunteer">
+                      <ion-icon name="People" slot="start"></ion-icon>
+                      <ion-label>Volunteer</ion-label>
+                    </ion-item>
+              </ion-menu-toggle>
+              
+            
+          </ion-list>
+        </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>
